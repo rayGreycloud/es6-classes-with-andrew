@@ -21,10 +21,20 @@ class Child extends Person {
   }
 }
 
-var me = new Person('Darth', 49);
-console.log(me.getGreeting());
-console.log(me.getDescription());
+class Baby extends Person {
+  getGreeting() {
+    return `Goo goo ga ga`;
+  }
+}
 
-var myself = new Child('Mikey', 4, 'cars');
-console.log(myself.getGreeting());
-console.log(myself.getDescription());
+var adult = new Person('Darth', 49);
+console.log(adult.getGreeting());
+console.log(adult.getDescription());
+
+var child = new Child('Anakin', 9, 'podracing');
+console.log(child.getGreeting());
+console.log(child.getDescription());
+
+var baby = new Baby('Luke', 1);
+console.log(baby.getGreeting());
+console.log(baby.getDescription());
