@@ -8,7 +8,7 @@ var ComponentOne = React.createClass({
   },
   getDefaultProps: function () {
     return {
-      count: 11
+      count: 0
     };
   },
   propTypes: {
